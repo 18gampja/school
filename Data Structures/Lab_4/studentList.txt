@@ -1,0 +1,20 @@
+studentID, 1, firstName, Greg, lastName, Smith, Major, Business, Email, greg.smith@school.com
+studentID, 2, firstName, Joey, lastName, Smith, Major, Business, Email, Jo3y.smith@school.com
+studentID, 3, firstName, Sara, lastName, Johnsmithson, Major, Business, Email, greg.smith@school.com
+studentID, 4, firstName, Raxian, lastName, Belethor, Major, Dragon Training, Email, carrier_pidgeon@whatisemail.com
+studentID, 5, firstName, Strax, lastName, Skullbreaker, Major, Finance, Email, cryptobro@stocksaredead.com
+studentID, 10, firstName, Lando, lastName, Norris, Major, Engineering ig, Email, l4ndon0rris_survey_taker@jmail.com
+studentID, 6, firstName, Ovlar, lastName, Mangle, Major, Potion Brewing, Email, mangleMansion@funtime.com
+studentID, 20, firstName, Gluknak, lastName, Junior, Major, Turf Management, Email, glukjr@whyme.com
+studentID, 8, firstName, Soy, lastName, Boy, Major, Technical Crying, Email, s0m3th1ng@minecraftsux.com
+studentID, 7, firstName, Yoyo, lastName, Gavel, Major, Breaking Own Toes, Email, UUUhhghnm@notthatbaby.gavel
+studentID, 11, firstName, Twinklehorn, lastName, Swiftfeet, Major, Demigod Protection, Email, halfmanhalfGOAT@hoofIT.com
+studentID, 12, firstName, Olqwyn, lastName, Faewild, Major, Archery, Email, fae_wildin_out@whyme.com
+studentID, 13, firstName, Nerienyphe, lastName, Urizira, Major, Potion Brewing, Email, dont_even_try@pronunciation.net
+studentID, 15, firstName, Hjultharm, lastName, Dunhakark, Major, Finance, Email, hyargh@whyme.com
+studentID, 14, firstName, Byllethiel, lastName, Bozzagurt, Major, Composition, Email, notyougrt@jmail.com
+studentID, 16, firstName, Kromdrom, lastName, Stromnehahr, Major, Dragon Training, Email, FIREBALL@jmail.com
+studentID, 17, firstName, Briyur, lastName, Loddlezeddle, Major, Sorcery, Email, sciencerulez@notthatbaby.gavel
+studentID, 18, firstName, Ylofyx, lastName, Focklegackle, Major, Business, Email, justanothername@pronunciation.net
+studentID, 9, firstName, Kaundale, lastName, Dingle, Major, Standup Comedy, Email, kaundaledinglewastaken@yahoo.gov
+studentID, 19, firstName, Krimphushtuluc, lastName, Xardorim, Major, Engineering ig, Email, breath_weapon@whatarecones.com
