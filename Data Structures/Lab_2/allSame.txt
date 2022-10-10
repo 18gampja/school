@@ -1,0 +1,163 @@
+{
+    "Students" : [
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        },
+
+        {
+            "studentID" : 19,
+            "firstName" : "Krimphushtuluc",
+            "lastName" : "Xardorim",
+            "Major" : "Engineering ig",
+            "Email" : "breath_weapon@whatarecones.com"
+        }
+    ]
+}

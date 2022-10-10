@@ -1,0 +1,71 @@
+import random
+
+def mergeSortDAC(arr):
+
+    # Check for base case of lenth of 1
+    if len(arr)>1:
+
+        # Finding the middle then slicing list
+        mid = len(arr) // 2
+
+        leftList = arr[ : mid]
+
+        rightList = arr[ mid : ]
+
+        # Call recursively until base case is met
+        mergeSortDAC(leftList)
+        mergeSortDAC(rightList)
+
+        # Declare indices
+        i = 0
+        j = 0
+        k = 0
+
+        # Iterate over the left and right lists to see which is greater, then sort least to greatest
+        while i < len(leftList) and j < len(rightList):
+
+            if leftList[i] <= rightList[j]:
+
+                arr[k] = leftList[i]
+                i = i + 1
+
+            else:
+
+                arr[k] = rightList[j]
+                j = j + 1
+
+            k = k + 1
+
+        # Picks up any left over elements in the case of an odd length
+        while i < len(leftList):
+
+            arr[k] = leftList[i]
+            i = i + 1
+            k = k + 1
+
+        while j < len(rightList):
+
+            arr[k] = rightList[j]
+            j = j + 1
+            k = k + 1
+
+# Just because I'm too lazy to make my own list
+def genList(length):
+
+    newList = []
+    count = 0
+
+    while count < length:
+        newList.append(random.randint(1, 10000))
+        count += 1
+
+    return newList
+
+# Generate list, print it, then print sorted list
+arr = genList(15)
+
+print(f'Original list is {arr}')
+
+mergeSortDAC(arr)
+
+print(f'The sorted list is {arr} ')
