@@ -72,7 +72,6 @@ def selectionSort(studentList, sortMethod):
             for student in range(i + 1, len(studentList)):
 
                 # Search for the minimum student ID
-                test = studentList[student]['studentID']
                 if(int(studentList[student]['studentID']) < int(minID['studentID'])):
 
                     minID = studentList[student]
@@ -117,7 +116,7 @@ def selectionSort(studentList, sortMethod):
                 studentList[changeIndex] = temp
                 i += 1
     
-    result = open('sortedStudents.txt', 'w')
+    result = open(r'C:\Users\Jacob\Documents\GitHub\school\Data Structures\Lab_4\sortedStudents.txt', 'w')
         
     for i in studentList:
         result.write(f'{i}\n')
@@ -165,38 +164,67 @@ def insertionSort(studentList, sortMethod):
             studentList[i + 1] = key
 
         printAll(studentList)
-        return studentList
+    
+    result = open(r'C:\Users\Jacob\Documents\GitHub\school\Data Structures\Lab_4\sortedStudents.txt', 'w')
         
+    for i in studentList:
+        result.write(f'{i}\n')
+    
+    result.close()
+    return studentList
 
-     
-
-def bubbleSort(studentList):
+def bubbleSort(studentList, sortMethod):
 
     # Grabs the length, then initiates a "swapped" bool, for optimization
     length = len(studentList)
 
     swapped = False
 
+    if sortMethod == 'id':
+
     # Iterates through the whole list, comparing the current element to the one in front of it
-    for i in range(length - 1):
+        for i in range(length - 1):
 
-        for swig in range(0, length - i - 1):
+            for swig in range(0, length - i - 1):
 
-            if(studentList[swig]['studentID'] > studentList[swig + 1]['studentID']):
+                if(int(studentList[swig]['studentID']) > int(studentList[swig + 1]['studentID'])):
 
-                swapped = True
+                    swapped = True
 
-                temp = studentList[swig]
-                studentList[swig] = studentList[swig + 1]
-                studentList[swig + 1] = temp
+                    temp = studentList[swig]
+                    studentList[swig] = studentList[swig + 1]
+                    studentList[swig + 1] = temp
 
-        if not swapped:
-            pass
+            if not swapped:
+                pass
 
+    else:
+
+        for i in range(length - 1):
+
+            for swig in range(0, length - i - 1):
+
+                if(studentList[swig]['firstName'] > studentList[swig + 1]['firstName']):
+
+                    swapped = True
+
+                    temp = studentList[swig]
+                    studentList[swig] = studentList[swig + 1]
+                    studentList[swig + 1] = temp
+
+            if not swapped:
+                pass
+
+    result = open(r'C:\Users\Jacob\Documents\GitHub\school\Data Structures\Lab_4\sortedStudents.txt', 'w')
+        
+    for i in studentList:
+        result.write(f'{i}\n')
+    
+    result.close()
     printAll(studentList)
     return studentList
 
-def mergeSort(studentList):
+def mergeSort(studentList, sortMethod):
 
     if len(studentList) > 1:
 
@@ -210,44 +238,82 @@ def mergeSort(studentList):
 
         # Call each side recursively
 
-        mergeSort(leftList)
-        mergeSort(rightList)
+        mergeSort(leftList, sortMethod)
+        mergeSort(rightList, sortMethod)
 
         # Indices
         i = 0
         j = 0
         k = 0
 
-        # Building each side of the list depending on which number is bigger
-        while i < len(leftList) and j < len(rightList):
+        if sortMethod == 'id':
 
-            if leftList[i]['studentID'] <= rightList[j]['studentID']:
+            # Building each side of the list depending on which number is bigger
+            while i < len(leftList) and j < len(rightList):
+
+                if int(leftList[i]['studentID']) <= int(rightList[j]['studentID']):
+
+                    studentList[k] = leftList[i]
+                    i = i + 1
+
+                else:
+
+                    studentList[k] = rightList[j]
+                    j = j + 1
+
+                k = k + 1
+
+            # Catches for odd length lists
+            while i < len(leftList):
 
                 studentList[k] = leftList[i]
                 i = i + 1
+                k = k + 1
 
-            else:
+            while j < len(rightList):
 
                 studentList[k] = rightList[j]
                 j = j + 1
+                k = k + 1
 
-            k = k + 1
+        else:
+            # Building each side of the list depending on which number is bigger
+            while i < len(leftList) and j < len(rightList):
 
-        # Catches for odd length lists
-        while i < len(leftList):
+                if leftList[i]['firstName'] <= rightList[j]['firstName']:
 
-            studentList[k] = leftList[i]
-            i = i + 1
-            k = k + 1
+                    studentList[k] = leftList[i]
+                    i = i + 1
 
-        while j < len(rightList):
+                else:
 
-            studentList[k] = rightList[j]
-            j = j + 1
-            k = k + 1
+                    studentList[k] = rightList[j]
+                    j = j + 1
 
-    printAll(studentList)
-    return studentList
+                k = k + 1
+
+            # Catches for odd length lists
+            while i < len(leftList):
+
+                studentList[k] = leftList[i]
+                i = i + 1
+                k = k + 1
+
+            while j < len(rightList):
+
+                studentList[k] = rightList[j]
+                j = j + 1
+                k = k + 1
+
+    result = open(r'C:\Users\Jacob\Documents\GitHub\school\Data Structures\Lab_4\sortedStudents.txt', 'w')
+
+    if len(studentList) == 20:    
+        for i in studentList:
+            result.write(f'{i}\n')
+        
+        result.close()
+        printAll(studentList)
+        return studentList
 
 def printAll(studentList):
     
@@ -257,12 +323,11 @@ def printAll(studentList):
 
 start = float(time.time() * 1000)
 
-# linearSearch(searchID, students)
-# binarySearch(searchID, students)
-selectionSort(studentList, 'id')
-# insertionSort(studentList, 'name')
-# bubbleSort(studentList)
-# mergeSort(studentList)
+print(selectionSort(studentList, 'id').__sizeof__())
+print(insertionSort(studentList, 'id').__sizeof__())
+print(bubbleSort(studentList, 'id').__sizeof__())
+print(mergeSort(studentList, 'id').__sizeof__())
+
 
 end = float(time.time() * 1000)
 
